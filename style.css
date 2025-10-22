@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.data-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.data-item {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.data-item .label {
+    font-weight: bold;
+    color: #333;
+    min-width: 120px; /* Align labels */
+    display: inline-block;
+}
+
+#share-max-value,
+#share-min-value {
+    color: #28a745; /* Green for values */
+    font-weight: bold;
+}
+
+#share-max-fy,
+#share-min-fy {
+    color: #6c757d; /* Grey for fiscal year */
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.footer-note a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-note a:hover {
+    text-decoration: underline;
+}
