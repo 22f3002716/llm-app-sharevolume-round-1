@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Loading Share Outstanding Data...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="share-entity-name">Loading Entity Name...</h1>
+        <p class="description">
+            This page displays the maximum and minimum number of common stock shares outstanding for a given company (CIK)
+            from SEC filings, specifically filtering for fiscal years after 2020.
+        </p>
+
+        <section class="data-section">
+            <h2>Maximum Shares Outstanding (FY &gt; 2020)</h2>
+            <div class="data-item">
+                <span class="label">Value:</span> <span id="share-max-value">Loading...</span>
+            </div>
+            <div class="data-item">
+                <span class="label">Fiscal Year:</span> <span id="share-max-fy">Loading...</span>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <h2>Minimum Shares Outstanding (FY &gt; 2020)</h2>
+            <div class="data-item">
+                <span class="label">Value:</span> <span id="share-min-value">Loading...</span>
+            </div>
+            <div class="data-item">
+                <span class="label">Fiscal Year:</span> <span id="share-min-fy">Loading...</span>
+            </div>
+        </section>
+
+        <p class="footer-note">
+            Data fetched from <a href="https://data.sec.gov/api" target="_blank">SEC EDGAR API</a>.
+            For different companies, append <code>?CIK=0001018724</code> (replace with desired 10-digit CIK) to the URL.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
